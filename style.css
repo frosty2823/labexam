@@ -1,0 +1,152 @@
+/* CSS for the page layout */
+html,
+body {
+  height: 100%;
+  margin: 0;
+}
+
+/* Styling for the nav bar */
+.navbar {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 100px;
+  height: 10%;
+  background-color: #f1c40f; /* Yellow */
+}
+
+.nav-left a {
+  margin-right: 10px;
+  color: white;
+  text-decoration: none;
+}
+
+.nav-button {
+  padding: 8px 16px;
+  background-color: transparent;
+  border: 2px solid white;
+  color: white;
+  cursor: pointer;
+}
+
+.nav-button:hover {
+  background-color: white;
+  color: #f1c40f; /* Yellow */
+}
+
+/* Styling for the body content */
+.bodyContent {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-auto-rows: auto;
+  gap: 10px;
+  padding: 50px;
+  justify-items: center; /* Added property to center align */
+}
+
+.card {
+  display: flex;
+}
+
+.card-left {
+  flex: 1;
+}
+
+.card-left img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.card-right {
+  margin-left: 10px;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.section {
+  margin-bottom: 10px;
+}
+
+.read-more {
+  text-decoration: underline;
+}
+
+.footerContainer-container {
+  background-color: rgba(128, 128, 128, 0.13);
+  height: 500px;
+}
+
+.footer-about-section {
+  float: left;
+}
+
+li {
+  margin: 10px;
+  list-style: none;
+  color: rgb(83, 83, 83);
+  font-family: sans-serif;
+}
+.footer-about-header {
+  margin-top: 95px;
+  margin-left: 75px;
+  margin-right: 150px;
+  font-weight: bold;
+  font-family: sans-serif;
+  margin-bottom: 35px;
+}
+
+.footer-about-list {
+  margin-left: 65px;
+}
+.footer-about-header-1 {
+  margin-top: 90px;
+  margin-bottom: 40px;
+}
+.footer-about-header-1-li li {
+  margin-left: 75px;
+}
+.footer-about-header-2 {
+  margin-top: 40px;
+  margin-bottom: 40px;
+}
+
+.button-svg-2 {
+  fill: black;
+}
+
+.footer-copyRight {
+  margin-left: 75px;
+  margin-top: 25px;
+  width: 100%;
+  float: left;
+  display: block;
+  font-size: 14px;
+  font-family: sans-serif;
+  color: rgb(109, 105, 105);
+}
+
+.thirdContainer-cardBoxArea-cardBox1-text {
+  font-family: sans-serif;
+}
+
+.text3,
+.text2 {
+  margin-left: 15px;
+}
+
+.text7 {
+  margin-left: 20px;
+}
+.text8 {
+  margin-left: 25px;
+}
+.thirdContainer-cardBoxArea-cardBox1 {
+  height: 200px;
+}
+.thirdContainer-row {
+  height: 550px;
+}
