@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <script src="record.js"></script>
+
+    <link
+      href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <title>Document</title>
+  </head>
+  <body class="min-h-screen bg-gray-100 text-gray-900 flex justify-center">
+    <div
+      class="max-w-screen-xl m-0 sm:m-20 bg-white shadow sm:rounded-lg flex justify-center flex-1 mt-8"
+    >
+      <div class="p-6 sm:p-12">
+        <div class="flex justify-between items-center">
+          <h1 class="text-2xl xl:text-3xl font-extrabold">Book Records</h1>
+          <button
+            onclick="window.location.href = 'http://127.0.0.1:5500/registration.html'"
+            class="px-4 py-2 bg-green-500 text-white rounded-lg"
+          >
+            Add New Record
+          </button>
+        </div>
+        <div class="overflow-x-auto mt-8">
+          <table class="w-full table-fixed">
+            <thead>
+              <tr>
+                <th class="px-6 py-3 bg-green-500 text-gray-100 font-semibold">
+                  Title
+                </th>
+                <th class="px-6 py-3 bg-green-500 text-gray-100 font-semibold">
+                  Author
+                </th>
+                <th class="px-6 py-3 bg-green-500 text-gray-100 font-semibold">
+                  Genre
+                </th>
+                <th class="px-6 py-3 bg-green-500 text-gray-100 font-semibold">
+                  Publication Date
+                </th>
+                <th class="px-6 py-3 bg-green-500 text-gray-100 font-semibold">
+                  Actions
+                </th>
+              </tr>
+            </thead>
+            <!-- <tbody>
+              <tr>
+                <td class="px-6 py-2">The Great Gatsby</td>
+                <td class="px-6 py-2">F. Scott Fitzgerald</td>
+                <td class="px-6 py-2">Classic</td>
+                <td class="px-6 py-2">1925</td>
+                <td class="px-6 py-2">
+                  <button class="px-4 py-2 bg-indigo-500 text-white rounded-lg">
+                    Edit
+                  </button>
+                  <button
+                    class="px-4 py-2 bg-red-500 text-white rounded-lg ml-2"
+                  >
+                    Delete
+                  </button>
+                </td>
+              </tr>
+              <tr>
+                <td class="px-6 py-2">To Kill a Mockingbird</td>
+                <td class="px-6 py-2">Harper Lee</td>
+                <td class="px-6 py-2">Fiction</td>
+                <td class="px-6 py-2">1960</td>
+                <td class="px-6 py-2">
+                  <button class="px-4 py-2 bg-indigo-500 text-white rounded-lg">
+                    Edit
+                  </button>
+                  <button
+                    class="px-4 py-2 bg-red-500 text-white rounded-lg ml-2"
+                  >
+                    Delete
+                  </button>
+                </td>
+              </tr>
+            </tbody> -->
+            <tbody id="publicationTableBody">
+              <!-- Data will be dynamically added here -->
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
